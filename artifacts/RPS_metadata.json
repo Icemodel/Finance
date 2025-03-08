@@ -15,14 +15,46 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes32",
+						"name": "commitInput",
+						"type": "bytes32"
+					}
+				],
+				"name": "commit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "elapsedSeconds",
+				"outputs": [
+					{
 						"internalType": "uint256",
-						"name": "choice",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "input",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					}
+				],
+				"name": "getHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -41,25 +73,6 @@
 			{
 				"inputs": [],
 				"name": "numPlayer",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "player_choice",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -110,6 +123,33 @@
 			},
 			{
 				"inputs": [],
+				"name": "returnRewardForFirstPlayer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "returnRewardPlayerWaitingForChoice",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "revealInput",
+						"type": "bytes32"
+					}
+				],
+				"name": "reveal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "reward",
 				"outputs": [
 					{
@@ -149,12 +189,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"RPS.sol": {
-			"keccak256": "0x453bff394c1fc9e792ed11708f94dce0c384f806e30b24357d24ec16a0ba17e5",
+		"CommitReveal.sol": {
+			"keccak256": "0x2d931525cca62d4f035bcf571832a14f03cdeed319e8aa69b34bb4adcc74f528",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5cb70b129559cf64c34d526946ccf7b6f62f03c730418e776bac44953db6ceb7",
-				"dweb:/ipfs/QmbGHSKCt353y7hBFMACvQyEobxkw2ZDFy1CKdsnAmN8K6"
+				"bzz-raw://48032c99d97e2e9c384e17ce87ae8791fef19e8e5b51522cd5a6af2f68ff835a",
+				"dweb:/ipfs/QmQ3rj3gm6gz12RzkSbD3RBghjrCPMsHnFQWXvLNN5vkcx"
+			]
+		},
+		"RPS.sol": {
+			"keccak256": "0xa3b3070ff61e327e7f1320e0456d2974cc380dfad105e0c6259e997e7f028ef4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://53e71adb79b583fea2b0ff78bf04a2d3fee6837716b8f9ba9c62e032a7398c42",
+				"dweb:/ipfs/QmS7frcfkWBWLtP8kgJXnj6TWXKNZ75nvk3bRc5gLHK4B8"
+			]
+		},
+		"TimeUnit.sol": {
+			"keccak256": "0xb377a635fd9526c8fdc7eda632d7f470eae45a5d8f9f9854b6e93799801300d0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2d100fa87bb6b1e0ca1d08995fb66bc68a19e417bbc67cfc965fcef284a232bd",
+				"dweb:/ipfs/Qma8YbYzTx6vom2tsebJ6RaewYjfRQU7uHNX5uWXEwCbAZ"
 			]
 		}
 	},

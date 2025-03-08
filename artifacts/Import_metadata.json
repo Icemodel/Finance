@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "delayGetFooName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "contract Foo",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFooName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "timeUnit",
+				"outputs": [
+					{
+						"internalType": "contract TimeUnit",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Import.sol": "Import"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Foo.sol": {
+			"keccak256": "0x1f68ab260f014f7c698b46e259a210e62723b61a819a87bed145466e13a9a420",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3d67a3502978c65912bd76c3314983d0f61bad0fe80de9cde668a67f76b9d65",
+				"dweb:/ipfs/Qmeq9NRYdkj4uBusAma5bU1zKNAEzmGPVUHggcuua3nEf7"
+			]
+		},
+		"Import.sol": {
+			"keccak256": "0xf73ea0a39d1f0019a347463f9d5adbb733bfd9b3544aab828812be555e2fbf74",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01dd4464dd0c918751b40807b3b059e4465cf7e8111ee65bba87a91e0de550fd",
+				"dweb:/ipfs/QmdhGcYyZT2uJVtsYGx4uKN2WbAfufjYPpx68Thn2wLFg5"
+			]
+		},
+		"TimeUnit.sol": {
+			"keccak256": "0xb377a635fd9526c8fdc7eda632d7f470eae45a5d8f9f9854b6e93799801300d0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2d100fa87bb6b1e0ca1d08995fb66bc68a19e417bbc67cfc965fcef284a232bd",
+				"dweb:/ipfs/Qma8YbYzTx6vom2tsebJ6RaewYjfRQU7uHNX5uWXEwCbAZ"
+			]
+		}
+	},
+	"version": 1
+}
